@@ -4,7 +4,19 @@ const argumento = process.argv.slice(2);
 //es un arreglo que va a guardar todos los números
 let numero = [];
 
-//pedir los numeros
+for(let i = 0; i < numero.length; i++){
+    numero.push(i);
+}
+
+
+
+
+
+
+
+
+
+/*pedir los numeros
 let num1 = Number(argumento[0]);
 let num2 = Number(argumento[1]);
 
@@ -31,4 +43,4 @@ function numMenor(){
 }
 
 
-console.log(colors.green(`El número mayor es: ${numMayor()})`, colors.red(`el número menor es: ${numMenor}`), `La lista de números es: ${numero}`));
+console.log(colors.green(`El número mayor es: ${numMayor()})`, colors.red(`el número menor es: ${numMenor}`), `La lista de números es: ${numero}`));*/

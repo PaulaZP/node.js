@@ -12,9 +12,8 @@ exports.operacion = function(num1, num2,operacion){
             console.log(`El resultado de la división es ${operacionDividir()}`)
         }
 
-    }else if(operacion === 4){
+    }else{
         return operacionRestar();
-        
     }
 
     /*------operaciones------ */

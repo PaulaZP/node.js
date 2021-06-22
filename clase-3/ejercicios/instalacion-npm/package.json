@@ -1,0 +1,17 @@
+{
+  "name": "instalacion-npm",
+  "version": "1.0.0",
+  "description": "Mi primer JSON",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "JSON"
+  ],
+  "author": "Paula Perez",
+  "license": "ISC",
+  "dependencies": {
+    "colors": "^1.4.0"
+  }
+}
