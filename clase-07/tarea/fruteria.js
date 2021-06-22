@@ -8,6 +8,7 @@ exports.frutas = function(frutaUsuario){
             situation = true;
         }
     }
+    
     if(situation == true){
         console.log(`La fruta que ingreso si se encuentra`);
     }else{
