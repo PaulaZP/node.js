@@ -17,3 +17,5 @@ const server = http.createServer((req, res) =>{
 server.listen(port, hostname, () => {
     console.log(`server running at http://${hostname}:${port}`)
 })
+
+//http://localhost:3000/?num1=10&num2=30
