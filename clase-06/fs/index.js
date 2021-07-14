@@ -10,6 +10,7 @@ const user = {
 //convert JSON object to string - converir el json a string
 const data = JSON.stringify(user);
 
+//se utiliza para escribir de forma asincrónica los datos especificados en un archivo.
 fs.writeFile(`${path}/holamundo.json`, data, function(err,data){ //data contenido del archivo
     if(err)
         return console.error(err);
@@ -24,7 +25,7 @@ fs.appendFile(`${path}/holamundo.txt`, "\n hola", function(err,data){ //data con
     console.log("se ha actualizadfo el archivo")
 });
 
-//
+//es un método incorporado que se utiliza para leer el archivo
 fs.readFile(`${path}/holamundo.txt`,'utf8', function(err,data){
     if(err)
         return console.error(err);  
