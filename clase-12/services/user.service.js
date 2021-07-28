@@ -1,9 +1,10 @@
+const md5 = require('md5')
 const User = require('../models/user.model')
 const userService = {}
 
-userService.createUser = async function({name, email}){
+userService.createUser = async function({name, email,password}){
     try{
-        const user = new User({name, email});
+        const user = new User({name, email, password: md5(password)});
         const newUser = await user.save();
 
         return newUser;
