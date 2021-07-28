@@ -8,6 +8,7 @@ userService.createUser = async function({name, email}){
 
         return newUser;
     }catch (e){
+        console.log(e.message);
         //disparar el error
         throw new Error ('Error while save user')
     }
@@ -18,7 +19,8 @@ userService.getUsers = async function(){
         const users = await User.find({});
         return users;
 
-    }catch{
+    }catch (e){
+        console.log(e.message);
         throw new Error ('Error while Paginating Users')
     }
 }
@@ -28,6 +30,7 @@ userService.getUser = async function({id}){
         const user = await User.findById(id)
         return user;
     }catch (e){
+        console.log(e.message);
         throw new Error ('Error while returning user');
     }
 }
@@ -39,6 +42,7 @@ userService.updateUser = async function({id}, {name, email}){
         await updateUser.save();
         return updateUser;
     }catch (e){
+        console.log(e.message);
         throw new Error ('Error while returning user');
     }
 }
