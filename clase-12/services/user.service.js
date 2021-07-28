@@ -39,8 +39,8 @@ userService.getUser = async function({id}){
 userService.updateUser = async function({id}, {name, email}){
     try{
         const user = await User.findById(id)
-        const updateUser = await user.set({name, email});  //setear los valores
-        await updateUser.save();
+        let getUser = JSON.parse(JSON.stringify(user));  
+        delete getUser.password
         return updateUser;
     }catch (e){
         console.log(e.message);
